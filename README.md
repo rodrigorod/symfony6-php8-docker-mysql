@@ -42,5 +42,5 @@ chown username:username -R .
 If you need a database, modify the .env file like this example:
 
 ```yaml
-DATABASE_URL="postgresql://user:password@database:5432/app?serverVersion=13&charset=utf8"
+DATABASE_URL="mysql://user:password@127.0.0.1:3306/database?serverVersion=5.7&charset=utf8mb4"
 ```
