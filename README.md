@@ -1,5 +1,5 @@
 
-# Symfony 6 + PHP 8 + Docker
+# Symfony 6 + PHP 8 + Docker + MySQL
 
 ## Run Locally
 
