@@ -1,4 +1,4 @@
-FROM php:8.0.13-cli
+FROM php:8.2-cli
 
 RUN apt-get update \
     &&  apt-get install -y --no-install-recommends \
@@ -24,8 +24,8 @@ RUN pecl install apcu && docker-php-ext-enable apcu
 
 RUN npm install --global yarn
 
-RUN git config --global user.email "you@example.com" \
-    &&  git config --global user.name "Your Name"
+RUN git config --global user.email "rodrigo.rodrigues@liip.ch" \
+    &&  git config --global user.name "Rodrigo Carraco Rodrigues"
 
 CMD tail -f /dev/null
 
