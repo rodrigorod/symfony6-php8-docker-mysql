@@ -3,12 +3,6 @@
 
 ## Run Locally
 
-Clone the project
-
-```bash
-  git clone https://github.com/sylvainnicolet/symfony6-php8-docker.git
-```
-
 Run the docker-compose
 
 ```bash
