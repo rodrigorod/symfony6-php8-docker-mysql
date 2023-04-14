@@ -1,4 +1,4 @@
-FROM php:8.2-cli
+FROM php:8.2-fpm
 
 RUN apt-get update \
     &&  apt-get install -y --no-install-recommends \
@@ -13,7 +13,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
     &&  mv composer.phar /usr/local/bin/composer
 
 RUN curl -sS https://get.symfony.com/cli/installer | bash \
-    &&  mv /root/.symfony/bin/symfony /usr/local/bin
+    &&  mv /root/.symfony5/bin/symfony /usr/local/bin
 
 RUN docker-php-ext-configure \
             intl \
@@ -29,4 +29,5 @@ RUN git config --global user.email "rodrigo.rodrigues@liip.ch" \
 
 CMD tail -f /dev/null
 
-WORKDIR /var/www/html/
+WORKDIR /var/www/app
+
