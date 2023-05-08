@@ -29,5 +29,5 @@ RUN git config --global user.email "rodrigo.rodrigues@liip.ch" \
 
 CMD tail -f /dev/null
 
-WORKDIR /var/www/app
+WORKDIR /var/www
 
